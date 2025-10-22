@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Wheels - Đại lý xe hơi cao cấp</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="logo"> <span>vì</span> tinh tú </a>
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#vehicles">Xe</a>
+            <a href="#services">Dịch vụ</a>
+            <a href="#featured">Nổi bật</a>
+            <a href="#reviews">Đánh giá</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+       <div id="login-btn">
+            <button class="btn">Đăng nhập</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+    <div class="login-form-container" id="login-form-container">
+        <span id="close-login-form" class="fas fa-times"></span>
+        <form action="" id="login-form">
+            <h3>Đăng nhập</h3>
+            <div id="login-error-message" style="color: red; font-size: 1.4rem; margin-bottom: 1rem; display: none;"></div>
+            <input type="email" placeholder="Email" class="box" id="login-email" required>
+            <input type="password" placeholder="Mật khẩu" class="box" id="login-password" required>
+            <p> Quên mật khẩu? <a href="#">Bấm vào đây</a> </p>
+            <input type="submit" value="Đăng nhập" class="btn">
+            <p>Hoặc đăng nhập bằng</p>
+            <div class="buttons">
+                <a href="#" class="btn"> Google </a>
+                <a href="#" class="btn"> Facebook </a>
+            </div>
+            <p> Chưa có tài khoản? <a href="#">Tạo tài khoản</a> </p>
+        </form>
+    </div>
+
+    <div class="sell-car-form-container" id="sell-car-form-container">
+        <span id="close-sell-car-form" class="fas fa-times"></span>
+        <form action="">
+            <h3>Đăng ký bán xe</h3>
+            <input type="text" placeholder="Hãng xe (ví dụ: Toyota)" class="box" required>
+            <input type="text" placeholder="Mẫu xe (ví dụ: Camry)" class="box" required>
+            <input type="number" placeholder="Năm sản xuất" class="box" required>
+            <input type="text" placeholder="Tình trạng (ví dụ: Đã qua sử dụng, 50.000km)" class="box" required>
+            <input type="number" placeholder="Giá mong muốn (USD)" class="box" required>
+            <input type="file" class="box" accept="image/*" multiple required>
+            <textarea placeholder="Mô tả thêm về xe của bạn" class="box" cols="30" rows="5"></textarea>
+            <input type="submit" value="Gửi thông tin thẩm định" class="btn">
+            <p>Chúng tôi sẽ liên hệ với bạn trong vòng 24h.</p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <h1 class="home-parallax" data-speed="-2">Tìm Xe Của Bạn</h1>
+        <img class="home-parallax" data-speed="5" src="image/home-img.png" alt="Homepage Car">
+        <a href="#vehicles" class="btn home-parallax" data-speed="7">Khám Phá Xe</a>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>Chi nhánh</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>4770+</h3>
+                <p>Xe đã bán</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>590+</h3>
+                <p>Khách hàng hài lòng</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car-side"></i>
+            <div class="content">
+                <h3>890+</h3>
+                <p>Xe mới</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading"> Xe <span>phổ biến</span> </h1>
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-1.png" alt="Vehicle 1">
+                    <div class="content">
+                        <h3>Porsche 911</h3>
+                        <div class="price"> <span>Giá: </span> $120,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2023 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Xăng <span class="fas fa-circle"></span> 183mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-2.png" alt="Vehicle 2">
+                    <div class="content">
+                        <h3>Porsche Boxster</h3>
+                        <div class="price"> <span>Giá: </span> $95,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2022 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Xăng <span class="fas fa-circle"></span> 170mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-3.png" alt="Vehicle 3">
+                    <div class="content">
+                        <h3>Porsche Panamera</h3>
+                        <div class="price"> <span>Giá: </span> $150,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2023 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Hybrid <span class="fas fa-circle"></span> 196mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-4.png" alt="Vehicle 4">
+                    <div class="content">
+                        <h3>Audi R8</h3>
+                        <div class="price"> <span>Giá: </span> $180,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2023 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Xăng <span class="fas fa-circle"></span> 205mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-5.png" alt="Vehicle 5">
+                    <div class="content">
+                        <h3>Ford Mustang</h3>
+                        <div class="price"> <span>Giá: </span> $75,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2022 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Xăng <span class="fas fa-circle"></span> 163mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/vehicle-6.png" alt="Vehicle 6">
+                    <div class="content">
+                        <h3>BMW M4</h3>
+                        <div class="price"> <span>Giá: </span> $110,000/- </div>
+                        <p> <span class="fas fa-circle"></span> 2023 <span class="fas fa-circle"></span> Tự động <span class="fas fa-circle"></span> Xăng <span class="fas fa-circle"></span> 180mph </p>
+                        <a href="#" class="btn">Xem ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading"> Dịch vụ của <span>chúng tôi</span> </h1>
+        <div class="box-container">
+            <div class="box"> <i class="fas fa-car"></i> <h3>Bán xe</h3> <p>Bạn muốn bán xe? Hãy điền thông tin chi tiết xe của bạn để chúng tôi thẩm định!</p> <a href="#" class="btn" id="sell-car-btn">Xem thêm</a> </div>
+            <div class="box"> <i class="fas fa-tools"></i> <h3>Sửa chữa</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p> <a href="#" class="btn">Xem thêm</a> </div>
+            <div class="box"> <i class="fas fa-car-crash"></i> <h3>Bảo hiểm</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p> <a href="#" class="btn">Xem thêm</a> </div>
+            <div class="box"> <i class="fas fa-car-battery"></i> <h3>Thay bình ắc quy</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p> <a href="#" class="btn">Xem thêm</a> </div>
+            <div class="box"> <i class="fas fa-gas-pump"></i> <h3>Thay dầu</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p> <a href="#" class="btn">Xem thêm</a> </div>
+            <div class="box"> <i class="fas fa-headset"></i> <h3>Hỗ trợ 24/7</h3> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p> <a href="#" class="btn">Xem thêm</a> </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <h1 class="heading"> Xe <span>nổi bật</span> </h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/car-1.png" alt="Featured Car 1">
+                    <h3>Nissan GTR</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                    <div class="price">$115,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-2.png" alt="Featured Car 2">
+                    <h3>Honda Civic</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="far fa-star"></i> </div>
+                    <div class="price">$35,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-3.png" alt="Featured Car 3">
+                    <h3>Mazda 3</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                    <div class="price">$38,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-4.png" alt="Featured Car 4">
+                    <h3>Subaru WRX</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                    <div class="price">$42,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-5.png" alt="Featured Car 5">
+                    <h3>Mercedes-Benz</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                    <div class="price">$85,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-6.png" alt="Featured Car 6">
+                    <h3>Toyota Camry</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                    <div class="price">$45,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-7.png" alt="Featured Car 7">
+                    <h3>Chevrolet Camaro</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                    <div class="price">$62,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/car-8.png" alt="Featured Car 8">
+                    <h3>Tesla Model 3</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">Xem ngay</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h3>Đăng ký nhận tin mới nhất</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, suscipit.</p>
+        <form action="">
+            <input type="email" placeholder="Nhập email của bạn">
+            <input type="submit" value="Đăng ký">
+        </form>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading"> Đánh giá của <span>khách hàng</span> </h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="Client 1">
+                    <p>Trải nghiệm tuyệt vời! Nhân viên rất nhiệt tình và tôi đã tìm được chiếc xe hoàn hảo cho gia đình mình. Rất khuyến khích.</p>
+                    <h3>Ngô Tiến Dũng</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="Client 2">
+                    <p>Quy trình liền mạch từ đầu đến cuối. Xe ở trong tình trạng tuyệt vời và giá cả hợp lý. Sẽ quay lại.</p>
+                    <h3>Đỗ Văn Đức</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="Client 3">
+                    <p>Tôi đánh giá cao môi trường bán hàng không áp lực. Họ đã trả lời tất cả các câu hỏi của tôi và khiến tôi cảm thấy tự tin khi mua hàng.</p>
+                    <h3>Lã Lương Hải Đăng</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.png" alt="Client 4">
+                    <p>Dịch vụ sau bán hàng là hàng đầu. Họ thực sự quan tâm đến khách hàng ngay cả sau khi giao dịch hoàn tất.</p>
+                    <h3>Định Văn Mạnh</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-5.png" alt="Client 5">
+                    <p>Rất nhiều loại xe để lựa chọn. Tôi đã có thể tìm thấy chính xác những gì tôi đang tìm kiếm trong phạm vi ngân sách của mình.</p>
+                    <h3>Sơn Tùng MTP</h3>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i> </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-6.png" alt="Client 6">
+                    <p>Đại lý trung thực và minh bạch. Tôi đã nhận được một ưu đãi lớn cho chiếc xe mới của mình. Cảm ơn, Max Wheels!</p>
+                    <h3>Đoàn Tuấn Kiệt</p>
+                    <div class="stars"> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Liên hệ</span> với chúng tôi</h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.778340194221!2d105.8341591147624!3d21.00242458601429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0x35333cbca44949c5!2zSGFub2ksIEhvw6BuIEtp4bqvbSwgSGFub2ksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1706922797144!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>Liên hệ</h3>
+                <input type="text" placeholder="Tên của bạn" class="box">
+                <input type="email" placeholder="Email của bạn" class="box">
+                <input type="text" placeholder="Chủ đề" class="box">
+                <textarea placeholder="Tin nhắn của bạn" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="Gửi tin nhắn" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-map-marker-alt"></i> Chi nhánh</h3>
+                <ul>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Hà Nội</a></li>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Tp.Hồ Chí Minh</a></li>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Cao Bằng</a></li>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Lạng Sơn</a></li>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Bắc Ninh</a></li>
+                    <li><a href="#contact"><i class="fas fa-location-dot"></i> Thái Bình</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-link"></i> Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-arrow-right"></i> Trang chủ</a></li>
+                    <li><a href="#vehicles"><i class="fas fa-arrow-right"></i> Xe</a></li>
+                    <li><a href="#services"><i class="fas fa-arrow-right"></i> Dịch vụ</a></li>
+                    <li><a href="#featured"><i class="fas fa-arrow-right"></i> Nổi bật</a></li>
+                    <li><a href="#reviews"><i class="fas fa-arrow-right"></i> Đánh giá</a></li>
+                    <li><a href="#contact"><i class="fas fa-arrow-right"></i> Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-address-book"></i> Thông tin liên hệ</h3>
+                <ul>
+                    <li><a href="tel:0362-4353-698"><i class="fas fa-phone"></i> 0362-4353-698</a></li>
+                    <li><a href="mailto:vitinhtu@gmail.com"><i class="fas fa-envelope"></i> vitinhtu@gmail.com</a></li>
+                    <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-share-alt"></i> Mạng xã hội</h3>
+                <ul class="social">
+                    <li><a href="#contact"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#contact"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#contact"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#contact"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credit">Thiết kế bởi <span>Nhóm Vì Tinh Tú</span> | Bản quyền © 2025</div>
+    </footer>
+
+    <div class="vehicle-details-container" id="vehicle-details-container">
+        <span id="close-vehicle-details" class="fas fa-times"></span>
+        <div class="vehicle-details-content">
+            <img id="detail-vehicle-img" src="" alt="Vehicle Image">
+            <div class="info">
+                <h3 id="detail-vehicle-name"></h3>
+                <div class="price" id="detail-vehicle-price"></div>
+                <p id="detail-vehicle-specs"></p>
+                <a href="#" class="btn">Yêu cầu lái thử</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-form-container" id="login-form-container">
+    <span id="close-login-form" class="fas fa-times"></span>
+    <form action="">
+        <h3>Đăng nhập</h3>
+        <input type="email" placeholder="Email" class="box" required>
+        <input type="password" placeholder="Mật khẩu" class="box" required>
+        <p> Quên mật khẩu? <a href="#">Bấm vào đây</a> </p>
+        <input type="submit" value="Đăng nhập" class="btn">
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="buttons">
+            <a href="#" class="btn"> Google </a>
+            <a href="#" class="btn"> Facebook </a>
+        </div>
+        <p> Chưa có tài khoản? <a href="#">Tạo tài khoản</a> </p>
+    </form>
+</div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
