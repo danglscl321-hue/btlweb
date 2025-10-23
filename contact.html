@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Wheels - Liên hệ</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="index.html" class="logo"> <span>vì</span> tinh tú </a>
+      <nav class="navbar">
+        <a href="index.html">Trang chủ</a>
+        <a href="vehicles.html">Xe</a>
+        <a href="services.html">Dịch vụ</a>
+        <a href="featured.html">Nổi bật</a>
+        <a href="reviews.html">Đánh giá</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="actions">
+        <div id="login-btn">
+          <button class="btn">Đăng nhập</button>
+          <i class="far fa-user"></i>
+        </div>
+        <div id="cart-btn">
+          <button class="btn" id="cart-toggle">
+            Giỏ hàng (<span id="cart-count">0</span>)
+          </button>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Liên hệ</span> với chúng tôi</h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.778340194221!2d105.8341591147624!3d21.00242458601429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0x35333cbca44949c5!2zSGFub2ksIEhvw6BuIEtp4bqvbSwgSGFub2ksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1706922797144!5m2!1svi!2s"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <form action="">
+          <h3>Gửi tin nhắn cho chúng tôi</h3>
+          <input type="text" placeholder="Tên của bạn" class="box" required />
+          <input type="email" placeholder="Email" class="box" required />
+          <input type="tel" placeholder="Số điện thoại" class="box" />
+          <textarea
+            placeholder="Tin nhắn của bạn"
+            class="box"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <input type="submit" value="Gửi tin nhắn" class="btn" />
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-box">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <div>
+            <h3>Địa chỉ</h3>
+            <p>
+              <a
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noopener"
+                aria-label="Mở bản đồ đến Hoàn Kiếm"
+                >Hoàn Kiếm, Hà Nội, Việt Nam</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <div>
+            <h3>Email</h3>
+            <p>
+              <a
+                href="mailto:vitinhtu@gmail.com"
+                aria-label="Gửi email đến vitinhtu"
+                >vitinhtu@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <i class="fas fa-phone" aria-hidden="true"></i>
+          <div>
+            <h3>Điện thoại</h3>
+            <p>
+              <a href="tel:03624353698" aria-label="Gọi đến số 0362 4353 698"
+                >0362-4353-698</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-map-marker-alt"></i> Chi nhánh</h3>
+          <ul>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Hà Nội</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Tp.Hồ Chí Minh</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Cao Bằng</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Lạng Sơn</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Bắc Ninh</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Thái Bình</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-link"></i> Liên kết nhanh</h3>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fas fa-arrow-right"></i> Trang chủ</a
+              >
+            </li>
+            <li>
+              <a href="vehicles.html"><i class="fas fa-arrow-right"></i> Xe</a>
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fas fa-arrow-right"></i> Dịch vụ</a
+              >
+            </li>
+            <li>
+              <a href="featured.html"
+                ><i class="fas fa-arrow-right"></i> Nổi bật</a
+              >
+            </li>
+            <li>
+              <a href="reviews.html"
+                ><i class="fas fa-arrow-right"></i> Đánh giá</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-arrow-right"></i> Liên hệ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-address-book"></i> Thông tin liên hệ</h3>
+          <ul>
+            <li>
+              <a href="tel:0362-4353-698"
+                ><i class="fas fa-phone"></i> 0362-4353-698</a
+              >
+            </li>
+            <li>
+              <a href="mailto:vitinhtu@gmail.com"
+                ><i class="fas fa-envelope"></i> vitinhtu@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-share-alt"></i> Mạng xã hội</h3>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="credit">
+        Thiết kế bởi <span>Nhóm Vì Tinh Tú</span> | Bản quyền © 2025
+      </div>
+    </footer>
+
+    <div class="login-form-container" id="login-form-container">
+      <span id="close-login-form" class="fas fa-times"></span>
+      <form action="">
+        <h3>Đăng nhập</h3>
+        <input type="email" placeholder="Email" class="box" required />
+        <input type="password" placeholder="Mật khẩu" class="box" required />
+        <p>Quên mật khẩu? <a href="#">Bấm vào đây</a></p>
+        <input type="submit" value="Đăng nhập" class="btn" />
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="buttons">
+          <a href="#" class="btn"> Google </a>
+          <a href="#" class="btn"> Facebook </a>
+        </div>
+        <p>Chưa có tài khoản? <a href="#">Tạo tài khoản</a></p>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
