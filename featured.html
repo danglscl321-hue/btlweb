@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Wheels - Xe nổi bật</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="index.html" class="logo"> <span>vì</span> tinh tú </a>
+      <nav class="navbar">
+        <a href="index.html">Trang chủ</a>
+        <a href="vehicles.html">Xe</a>
+        <a href="services.html">Dịch vụ</a>
+        <a href="featured.html">Nổi bật</a>
+        <a href="reviews.html">Đánh giá</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+      <div class="actions">
+        <div id="login-btn">
+          <button class="btn">Đăng nhập</button>
+          <i class="far fa-user"></i>
+        </div>
+        <div id="cart-btn">
+          <button class="btn" id="cart-toggle">
+            Giỏ hàng (<span id="cart-count">0</span>)
+          </button>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="featured" id="featured">
+      <h1 class="heading">Xe <span>nổi bật</span></h1>
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/car-1.png" alt="Featured Car 1" />
+            <h3>Nissan GTR</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$115,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Nissan GTR"
+              data-price="$115,000"
+              data-image="image/car-1.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Nissan GTR"
+              data-price="115000"
+              data-image="image/car-1.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-2.png" alt="Featured Car 2" />
+            <h3>Honda Civic</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="price">$35,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Honda Civic"
+              data-price="$35,000"
+              data-image="image/car-2.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Honda Civic"
+              data-price="35000"
+              data-image="image/car-2.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-3.png" alt="Featured Car 3" />
+            <h3>Mazda 3</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$38,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Mazda 3"
+              data-price="$38,000"
+              data-image="image/car-3.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Mazda 3"
+              data-price="38000"
+              data-image="image/car-3.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-4.png" alt="Featured Car 4" />
+            <h3>Subaru WRX</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$42,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Subaru WRX"
+              data-price="$42,000"
+              data-image="image/car-4.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Subaru WRX"
+              data-price="42000"
+              data-image="image/car-4.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-5.png" alt="Featured Car 5" />
+            <h3>Mercedes-Benz</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$85,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Mercedes-Benz"
+              data-price="$85,000"
+              data-image="image/car-5.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Mercedes-Benz"
+              data-price="85000"
+              data-image="image/car-5.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-6.png" alt="Featured Car 6" />
+            <h3>Toyota Camry</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$45,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Toyota Camry"
+              data-price="$45,000"
+              data-image="image/car-6.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Toyota Camry"
+              data-price="45000"
+              data-image="image/car-6.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-7.png" alt="Featured Car 7" />
+            <h3>Chevrolet Camaro</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$62,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Chevrolet Camaro"
+              data-price="$62,000"
+              data-image="image/car-7.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Chevrolet Camaro"
+              data-price="62000"
+              data-image="image/car-7.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/car-8.png" alt="Featured Car 8" />
+            <h3>Tesla Model 3</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">$55,000/-</div>
+            <a
+              href="#"
+              class="btn view-details"
+              data-name="Tesla Model 3"
+              data-price="$55,000"
+              data-image="image/car-8.png"
+              >Xem ngay</a
+            >
+            <button
+              class="btn add-to-cart"
+              data-name="Tesla Model 3"
+              data-price="55000"
+              data-image="image/car-8.png"
+            >
+              Thêm vào giỏ hàng
+            </button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Chi tiết xe popup -->
+    <div class="vehicle-details-container" id="vehicle-details-container">
+      <span id="close-vehicle-details" class="fas fa-times"></span>
+      <div class="vehicle-details-content">
+        <img id="detail-vehicle-img" src="" alt="Vehicle Image" />
+        <div class="info">
+          <h3 id="detail-vehicle-name"></h3>
+          <div class="price" id="detail-vehicle-price"></div>
+          <p id="detail-vehicle-specs"></p>
+          <a href="#" class="btn">Yêu cầu lái thử</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-map-marker-alt"></i> Chi nhánh</h3>
+          <ul>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Hà Nội</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Tp.Hồ Chí Minh</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Cao Bằng</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Lạng Sơn</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Bắc Ninh</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-location-dot"></i> Thái Bình</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-link"></i> Liên kết nhanh</h3>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fas fa-arrow-right"></i> Trang chủ</a
+              >
+            </li>
+            <li>
+              <a href="vehicles.html"><i class="fas fa-arrow-right"></i> Xe</a>
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fas fa-arrow-right"></i> Dịch vụ</a
+              >
+            </li>
+            <li>
+              <a href="featured.html"
+                ><i class="fas fa-arrow-right"></i> Nổi bật</a
+              >
+            </li>
+            <li>
+              <a href="reviews.html"
+                ><i class="fas fa-arrow-right"></i> Đánh giá</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-arrow-right"></i> Liên hệ</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-address-book"></i> Thông tin liên hệ</h3>
+          <ul>
+            <li>
+              <a href="tel:0362-4353-698"
+                ><i class="fas fa-phone"></i> 0362-4353-698</a
+              >
+            </li>
+            <li>
+              <a href="mailto:vitinhtu@gmail.com"
+                ><i class="fas fa-envelope"></i> vitinhtu@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fas fa-map-marker-alt"></i> Hà Nội, Việt Nam</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3><i class="fas fa-share-alt"></i> Mạng xã hội</h3>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="credit">
+        Thiết kế bởi <span>Nhóm Vì Tinh Tú</span> | Bản quyền © 2025
+      </div>
+    </footer>
+
+    <div class="login-form-container" id="login-form-container">
+      <span id="close-login-form" class="fas fa-times"></span>
+      <form action="">
+        <h3>Đăng nhập</h3>
+        <input type="email" placeholder="Email" class="box" required />
+        <input type="password" placeholder="Mật khẩu" class="box" required />
+        <p>Quên mật khẩu? <a href="#">Bấm vào đây</a></p>
+        <input type="submit" value="Đăng nhập" class="btn" />
+        <p>Hoặc đăng nhập bằng</p>
+        <div class="buttons">
+          <a href="#" class="btn"> Google </a>
+          <a href="#" class="btn"> Facebook </a>
+        </div>
+        <p>Chưa có tài khoản? <a href="#">Tạo tài khoản</a></p>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

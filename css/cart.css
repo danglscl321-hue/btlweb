@@ -1,0 +1,145 @@
+.cart-container {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  width: 36rem;
+  background: #fff;
+  z-index: 2000;
+  /* flat, borderless style */
+  box-shadow: none;
+  border-left: none;
+  transition: right 0.35s ease;
+  padding: 2.5rem 2rem;
+}
+
+.cart-container.active {
+  right: 0;
+}
+
+.cart-container h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+/* subtle background for items when hovered to suggest separations */
+.cart-item:hover {
+  background: #fafafa;
+  border-radius: 0.4rem;
+}
+
+.cart-items {
+  max-height: calc(100vh - 16rem);
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem 0.6rem;
+  border-bottom: none;
+}
+.cart-item img {
+  width: 7rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.cart-item .info {
+  flex: 1;
+}
+.cart-item .info h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.cart-item .info p {
+  margin: 0.3rem 0;
+  color: var(--light-color);
+  font-size: 1.4rem;
+}
+.cart-item .info .qty-controls {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+.cart-item .info .qty-controls button {
+  background: var(--light-yellow);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.cart-item .info .line-subtotal {
+  margin-left: 0.4rem;
+  color: var(--black);
+}
+.cart-item .remove {
+  cursor: pointer;
+  color: #e74c3c;
+  font-size: 1.6rem;
+}
+
+.cart-total {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.cart-total h4 {
+  font-size: 1.9rem;
+  color: var(--black);
+}
+
+.cart-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.cart-actions .btn {
+  padding: 0.5rem 0.9rem;
+  font-size: 1.4rem;
+}
+
+#cart-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* small fixes for header placement */
+.header #cart-btn {
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Make cart button align like login button */
+.header #cart-btn .btn {
+  margin-top: 0;
+}
+.header #cart-btn i {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive: show icon on small screens like login button */
+@media (max-width: 768px) {
+  .header #cart-btn i {
+    display: block;
+  }
+  .header #cart-btn .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    width: 100%;
+  }
+}
